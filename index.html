@@ -10,7 +10,7 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json"> -->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -23,8 +23,7 @@
     <title>Devin Hero - Portfolio</title>
   </head>
   <body>
-    <!-- <Header /> -->
-    <header class="header">
+    <header role="banner">
       <div class="header-banner">
         <h1>Devin Hero</h1>
         <div class="header-banner--divider"> </div>
@@ -32,7 +31,7 @@
       </div>
     </header>
 
-    <div class="nav">
+    <div class="nav" role="navigation">
       <a href="#about">About</a>
       <div class="nav--divider">|</div>
       <a href="#skills">Skills</a>
@@ -42,130 +41,148 @@
       <a href="#contact">Contact</a>
     </div><!-- <Nav /> -->
 
-    <div class="content">
-      <div class="about">
-        <div class="content--nav-target">
-          <span id="about"></span>
-        </div>
-        <p>Hello, I'm Devin</p>
-        <p>Welcome to the sample lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-        <p>I dunno why you're here right now, this site isn't finished</p>
-        <p>On weekends I'm a lvl 8 wizard</p>
-      </div><!--about-->
-
-      <div class="skills">
-        <div class="content--nav-target">
-          <span id="skills"></span>
-        </div>
-
-        <h2>SKILLS</h2>
-
-        <div class="skills-content">
-          <div class="skills-tech">
-            <div class="skills-tech--item">Express</div>
-            <div class="skills-tech--item">Node.js</div>
-            <div class="skills-tech--item">React</div>
-            <div class="skills-tech--item">Mongoose</div>
+    <main role="main">
+      <div class="content">
+        <div class="about">
+          <div class="content--nav-target">
+            <span id="about"></span>
           </div>
-          <div class="skills-highlights">
-            <div class="skills-highlights--list">
-              <ul>
-                <li>I can do a thing</li>
-                <li>I can do another thing</li>
-                <li>In fact I can do several things wouldn't you know it</li>
-                <li>Perhaps even many things</li>
-              </ul>
+          <p>Hello, I'm Devin</p>
+          <p>Welcome to the sample lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+          <p>I dunno why you're here right now, this site isn't finished</p>
+          <p>On weekends I'm a lvl 8 wizard</p>
+        </div><!--about-->
+
+        <div class="skills">
+          <div class="content--nav-target">
+            <span id="skills"></span>
+          </div>
+
+          <h2>SKILLS</h2>
+
+          <div class="skills-content">
+            <div class="skills-tech">
+              <!-- <div class="skills-tech--item">Express</div>
+              <div class="skills-tech--item">Node.js</div>
+              <div class="skills-tech--item">React</div>
+              <div class="skills-tech--item">Mongoose</div> -->
+
+              <div class="skills-tech--item">
+                <img src="https://icongr.am/devicon/express-original-wordmark.svg?size=80" alt="Express Icon" />
+              </div>
+              <div class="skills-tech--item">
+                <img src="https://icongr.am/devicon/nodejs-plain.svg?size=80" alt="Node.js Icon" />
+                <!-- <svg viewBox="0 0 80 80" class="icon-nodejs">
+                  <use xlink:href="./nodejs-plain.svg#icon-nodejs"></use>
+                </svg> -->
+              </div>
+              <div class="skills-tech--item">
+                <img src="https://icongr.am/devicon/react-original-wordmark.svg?size=80" alt="React Icon" />
+              </div>
+              <div class="skills-tech--item">
+                <img src="https://icongr.am/devicon/mongodb-plain-wordmark.svg?size=80" alt="MongoDB Icon" />
+              </div>
             </div>
-            <div class="skills-highlights--list">
-              <ul>
-                <li>I'm capable of a task</li>
-                <li>I can perform another task</li>
-                <li>So many tasks I can do</li>
-                <li>It's totally crazy man like wow you wouldn't beleive it</li>
-              </ul>
+            <div class="skills-highlights">
+              <div class="skills-highlights--list">
+                <ul>
+                  <li>I can do a thing</li>
+                  <li>I can do another thing</li>
+                  <li>In fact I can do several things wouldn't you know it</li>
+                  <li>Perhaps even many things</li>
+                </ul>
+              </div>
+              <div class="skills-highlights--list">
+                <ul>
+                  <li>I'm capable of a task</li>
+                  <li>I can perform another task</li>
+                  <li>So many tasks I can do</li>
+                  <li>It's totally crazy man like wow you wouldn't believe it</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </div><!--skills-->
+        </div><!--skills-->
 
-      <div class="projects" >
-        <div class="content--nav-target">
-          <span id="projects"></span>
-        </div>
-
-        <h2>PROJECTS</h2>
-  
-        <div class="project-item">
-          <div class="project-item-header">
-            PROJECT TITLE 1
+        <div class="projects" >
+          <div class="content--nav-target">
+            <span id="projects"></span>
           </div>
-  
-          <div class="project-item-content">
-            <div class="project-item-content--img">
-              <img src="https://f4.bcbits.com/img/a0266865844_10.jpg" alt="dummy placeholder image" />
+
+          <h2>PROJECTS</h2>
+    
+          <div class="project-item">
+            <div class="project-item-header">
+              PROJECT TITLE 1
             </div>
-  
-            <div class="project-item-content--description">
-              <p>(Tech, tech, tech, tech)</p>
-              <p>LOREM IPSUM. Howdy!
-                I'm FLOWEY. FLOWEY the FLOWER! 
-                Hmmm... You're new to the UNDERGROUND, aren'tcha? 
-                Golly, you must be so confused. 
-                Someone ought to teach you how things work around here! 
-                I guess little old me will have to do. 
-                Ready? Here we go!</p>
-            </div>
-  
-            <div class="project-item-content--links">
-              <a href="#">Live App</a>
-              <a href="#">GitHub Client Repo</a>
-              <a href="#">GitHub Server Repo</a>
-            </div>
-          </div> 
-        </div>
-  
-        <div class="project-item">
-          <div class="project-item-header">
-            PROJECT TITLE 2
+    
+            <div class="project-item-content">
+              <div class="project-item-content--img">
+                <img src="https://f4.bcbits.com/img/a0266865844_10.jpg" alt="dummy placeholder image" />
+              </div>
+    
+              <div class="project-item-content--description">
+                <p>(Tech, tech, tech, tech)</p>
+                <p>LOREM IPSUM. Howdy!
+                  I'm FLOWEY. FLOWEY the FLOWER! 
+                  Hmmm... You're new to the UNDERGROUND, aren'tcha? 
+                  Golly, you must be so confused. 
+                  Someone ought to teach you how things work around here! 
+                  I guess little old me will have to do. 
+                  Ready? Here we go!</p>
+              </div>
+    
+              <div class="project-item-content--links">
+                <a href="#">Live App</a>
+                <a href="#">GitHub Client Repo</a>
+                <a href="#">GitHub Server Repo</a>
+              </div>
+            </div> 
           </div>
-  
-          <div class="project-item-content">
-            <div class="project-item-content--img">
-              <img src="https://f4.bcbits.com/img/a0136093652_10.jpg" alt="dummy placeholder image"/>
+    
+          <div class="project-item">
+            <div class="project-item-header">
+              PROJECT TITLE 2
             </div>
-  
-            <div class="project-item-content--description">
-              <p>(Tech, tech, tech, tech)</p>
-              <p>LOREM IPSUM
-                Howdy! How can I... Oh.
-                I so badly want to say, "would you like a cup of tea?"
-                You know how it is.
-                Nice day today, huh?
-                Birds are singing, flowers are blooming...
-                Perfect weather for a game of catch.
-              </p>
-            </div>
-  
-            <div class="project-item-content--links">
-              <a href="#">Live App</a>
-              <a href="#">GitHub Client Repo</a>
-              <a href="#">GitHub Server Repo</a>
-            </div>
-          </div> 
-        </div>
-      </div><!--projects-->
-      
-      <div class="contact" >
-        <div class="content--nav-target">
-          <span id="contact"></span>
-        </div>
+    
+            <div class="project-item-content">
+              <div class="project-item-content--img">
+                <img src="https://f4.bcbits.com/img/a0136093652_10.jpg" alt="dummy placeholder image"/>
+              </div>
+    
+              <div class="project-item-content--description">
+                <p>(Tech, tech, tech, tech)</p>
+                <p>LOREM IPSUM
+                  Howdy! How can I... Oh.
+                  I so badly want to say, "would you like a cup of tea?"
+                  You know how it is.
+                  Nice day today, huh?
+                  Birds are singing, flowers are blooming...
+                  Perfect weather for a game of catch.
+                </p>
+              </div>
+    
+              <div class="project-item-content--links">
+                <a href="#">Live App</a>
+                <a href="#">GitHub Client Repo</a>
+                <a href="#">GitHub Server Repo</a>
+              </div>
+            </div> 
+          </div>
+        </div><!--projects-->
+        
+        <div class="contact" >
+          <div class="content--nav-target">
+            <span id="contact"></span>
+          </div>
 
-        <h2>CONTACT</h2>
-        <p>thing 1</p>
-        <p>thing 2</p>
-        <p>thing 3</p>
-      </div><!--contact-->
+          <h2>CONTACT</h2>
+          <p>thing 1</p>
+          <p>thing 2</p>
+          <p>thing 3</p>
+        </div><!--contact-->
 
-    </div><!--content-->
+      </div><!--content-->
+    </main>
   </body>
 </html>
