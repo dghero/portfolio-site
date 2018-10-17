@@ -11,7 +11,7 @@ body{
 /*** Header ***/
 .header-banner{
   padding: 30px;
-  background: #222222;
+  background: #1A1A1A;
   color: white;
 }
 
@@ -97,21 +97,18 @@ body{
 }
 
 .skills-tech{
+  max-width: 300px;
   display: inline-flex;
   justify-content: center;
   align-content: flex-start;
   flex-wrap: wrap;
-  width: 39%;
-}
-
-.skills-tech{
-  max-width: 400px;
 }
 
 .skills-tech--item{
   display: inline-flex;
   justify-content: center;
   align-content: center;
+  border: 2px solid rgb(99, 143, 99);
   border-radius: 60px;
   height: 120px;
   width: 120px;
@@ -119,9 +116,16 @@ body{
   background: #C6F2C6;
 }
 
-.skills-tech--item img{
-  color: black;
-  fill: currentColor;
+.skills-tech--icon{
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  background-color: #1A1A1A;
+}
+
+.skills-tech--icon span{
+  display: none;
+  /* color: white; */
 }
 
 .skills-highlights{
@@ -152,7 +156,7 @@ body{
 
 /* Projects Section */
 .project-item{
-  /* width: 97%; */
+  max-width: 850px;
   margin: 10px auto;
   border: 1px solid black;
   border-radius: 4px;
@@ -195,18 +199,100 @@ body{
 }
 
 
+/* Contact */
+.contact{
+  padding: 40px;
+  background-color: #1A1A1A;
+  color: white;
+}
+
+.contact h2{
+  margin-top: 0;
+}
+
+.contact-list-container{
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
+}
+
+.contact-list-item{
+  margin-bottom: 10px;
+  width: 210px;
+  display: inline-flex;
+  flex-direction: column;
+  font-size: .7em;  
+}
+
+.contact-list-item--icon{
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  background-color: white;
+}
+
+.contact-list-item a:link,
+.contact-list-item a:hover,
+.contact-list-item a:visited,
+.contact-list-item a:active{
+  color: white;
+}
 
 
 
+/*** Icons ***/
+
+/* Tech Item Icons */
+.icon-mongodb{
+  -webkit-mask: url(https://icongr.am/devicon/mongodb-plain-wordmark.svg?size=85) no-repeat center;
+  mask: url(https://icongr.am/devicon/mongodb-plain-wordmark.svg?size=85) no-repeat center;
+}
+.icon-express{
+  -webkit-mask: url(https://icongr.am/devicon/express-original-wordmark.svg?size=85) no-repeat center;
+  mask: url(https://icongr.am/devicon/express-original-wordmark.svg?size=85) no-repeat center;
+}
+.icon-react{
+  -webkit-mask: url(https://icongr.am/devicon/react-original-wordmark.svg?size=85) no-repeat center;
+  mask: url(https://icongr.am/devicon/react-original-wordmark.svg?size=85) no-repeat center;
+}
+.icon-nodejs{
+  -webkit-mask: url(https://icongr.am/devicon/nodejs-plain.svg?size=85) no-repeat center;
+  mask: url(https://icongr.am/devicon/nodejs-plain.svg?size=85) no-repeat center;
+}
+
+
+/* Contact Icons */
+.icon-github{
+  -webkit-mask: url(https://icongr.am/devicon/github-original.svg?size=80) no-repeat center;
+  mask: url(https://icongr.am/devicon/github-original.svg?size=80) no-repeat center;
+}
+
+.icon-resume{
+  -webkit-mask: url(https://icongr.am/feather/file-text.svg?size=80) no-repeat center;
+  mask: url(https://icongr.am/feather/file-text.svg?size=80) no-repeat center;
+}
+
+.icon-linkedin{
+  -webkit-mask: url(https://icongr.am/simple/linkedin.svg?size=80) no-repeat center;
+  mask: url(https://icongr.am/simple/linkedin.svg?size=80) no-repeat center;
+}
+
+.icon-email{
+  -webkit-mask: url(https://icongr.am/clarity/email.svg?size=80) no-repeat center;
+  mask: url(https://icongr.am/clarity/email.svg?size=80) no-repeat center;
+}
+
+.icon-phone{
+  -webkit-mask: url(https://icongr.am/clarity/mobile-phone.svg?size=80) no-repeat center;
+  mask: url(https://icongr.am/clarity/mobile-phone.svg?size=80) no-repeat center;
+}
 
 
 
-
-
-
-
-
-/* Reactive designs */
+/*** Reactive designs ***/
 
 @media only screen and (max-width: 900px){
   /* Skills Section */
@@ -226,9 +312,11 @@ body{
   }
 }
 
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 650px){
   /* Skills Section */
   .skills-highlights--list {
     width: 100%;
   }
+
+  /* Projects Section */
 }

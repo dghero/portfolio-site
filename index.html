@@ -6,23 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="./styles/index.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json"> -->
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>Devin Hero - Portfolio</title>
   </head>
   <body>
+    <!--My my, aren't you nosy? :) Thanks for visiting my site!-->
     <header role="banner">
       <div class="header-banner">
         <h1>Devin Hero</h1>
@@ -30,7 +17,6 @@
         <h2>Full-Stack Web Dev</h2>
       </div>
     </header>
-
     <div class="nav" role="navigation">
       <a href="#about">About</a>
       <div class="nav--divider">|</div>
@@ -62,26 +48,32 @@
 
           <div class="skills-content">
             <div class="skills-tech">
-              <!-- <div class="skills-tech--item">Express</div>
-              <div class="skills-tech--item">Node.js</div>
-              <div class="skills-tech--item">React</div>
-              <div class="skills-tech--item">Mongoose</div> -->
 
-              <div class="skills-tech--item">
-                <img src="https://icongr.am/devicon/express-original-wordmark.svg?size=80" alt="Express Icon" />
+              <div class="skills-tech--item ">
+                <div class="skills-tech--icon icon-mongodb">
+                  <span>MongoDB</span>
+                </div>  
               </div>
-              <div class="skills-tech--item">
-                <img src="https://icongr.am/devicon/nodejs-plain.svg?size=80" alt="Node.js Icon" />
-                <!-- <svg viewBox="0 0 80 80" class="icon-nodejs">
-                  <use xlink:href="./nodejs-plain.svg#icon-nodejs"></use>
-                </svg> -->
+
+              <div class="skills-tech--item ">
+                <div class="skills-tech--icon icon-express">
+                  <span>Express</span>
+                </div>  
               </div>
-              <div class="skills-tech--item">
-                <img src="https://icongr.am/devicon/react-original-wordmark.svg?size=80" alt="React Icon" />
+
+              <div class="skills-tech--item ">
+                <div class="skills-tech--icon icon-react">
+                  <span>React</span>
+                </div>  
               </div>
-              <div class="skills-tech--item">
-                <img src="https://icongr.am/devicon/mongodb-plain-wordmark.svg?size=80" alt="MongoDB Icon" />
+
+              <div class="skills-tech--item ">
+                <div class="skills-tech--icon icon-nodejs">
+                  <span>Node.js</span>
+                </div>  
               </div>
+
+
             </div>
             <div class="skills-highlights">
               <div class="skills-highlights--list">
@@ -170,19 +162,61 @@
             </div> 
           </div>
         </div><!--projects-->
-        
+      </div><!--content-->
+      <div class="footer">
         <div class="contact" >
           <div class="content--nav-target">
             <span id="contact"></span>
           </div>
 
           <h2>CONTACT</h2>
-          <p>thing 1</p>
-          <p>thing 2</p>
-          <p>thing 3</p>
-        </div><!--contact-->
 
-      </div><!--content-->
+          <div class="contact-list-container">
+            <div class="contact-list-item">
+              <a href="http://www.github.com/dghero">
+                <div class="contact-list-item--icon icon-github"></div>
+              </a>
+              <a href="http://www.github.com/dghero">github.com/dghero</a>
+            </div>
+
+            <div class="contact-list-item">
+              <a href="./files/devinhero_resume.pdf">
+                <div class="contact-list-item--icon icon-resume"></div>
+              </a>
+              <a href="./files/devinhero_resume.pdf">Résumé</a>
+            </div>
+
+            <div class="contact-list-item">
+              <a href="https://www.linkedin.com/in/devin-hero/">
+                <div class="contact-list-item--icon icon-linkedin"></div>
+              </a>
+              <a href="https://www.linkedin.com/in/devin-hero/">linkedin.com/in/devin-hero</a>
+            </div>
+
+            <div class="contact-list-item">
+              <a href="mailto:devingreyhero@gmail.com">
+                <div class="contact-list-item--icon icon-email"></div>
+              </a>
+              <a href="mailto:devingreyhero@gmail.com">devingreyhero@gmail.com</a>
+            </div>
+
+            <div class="contact-list-item">
+                <a href="tel:9716783115">
+                  <div class="contact-list-item--icon icon-phone"></div>
+                </a>
+                <a href="tel:9716783115">(971) 678-3115</a>
+              </div>
+
+            <!--Icons for Github, Resume, LinkedIn, Email, Phone
+              https://icongr.am/devicon/github-original.svg
+              https://icongr.am/feather/file-text.svg
+              https://icongr.am/simple/linkedin.svg
+              https://icongr.am/clarity/email.svg
+              https://icongr.am/clarity/mobile-phone.svg
+            -->
+          </div>
+        </div><!--contact-->
+      </div><!--footer-->
     </main>
   </body>
 </html>
