@@ -1,6 +1,6 @@
 body{
   box-sizing: border-box;
-  background-color: #F7F9FC;
+  background-color: #E6EEF7;
   text-align: center;
   font-family: 'Roboto Slab', sans-serif;
   font-size: 1.2em;
@@ -42,7 +42,7 @@ body{
 
   display: flex;
   justify-content: center;
-  background: #CCD8E8;
+  background: #B9CCE5;
   box-shadow: 0 6px 10px 0px rgba(68, 68, 85, .5);
 }
 
@@ -190,6 +190,10 @@ body{
   padding: 10px;
 }
 
+.project-item-content--description p{
+  margin-top: 0;
+}
+
 
 
 
@@ -222,10 +226,9 @@ body{
   }
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 575px){
   /* Skills Section */
   .skills-highlights--list {
     width: 100%;
   }
-
 }
