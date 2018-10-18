@@ -87,6 +87,8 @@ body{
 .about{
   margin: auto;
   max-width: 800px;
+  font-size: 1.2em;
+  text-align: justify;
 }
 
 
@@ -94,21 +96,27 @@ body{
 
 .skills-content{
   display: flex;
+  justify-content: center;
 }
 
 .skills-tech{
-  max-width: 300px;
+  width: 300px;
   display: inline-flex;
   justify-content: center;
   align-content: flex-start;
   flex-wrap: wrap;
 }
 
+.skills-tech-grouping{
+  display: inline-block;
+  width: 300px;
+}
+
 .skills-tech--item{
   display: inline-flex;
   justify-content: center;
   align-content: center;
-  border: 2px solid rgb(99, 143, 99);
+  border: 2px solid rgb(81, 117, 81);
   border-radius: 60px;
   height: 120px;
   width: 120px;
@@ -120,7 +128,7 @@ body{
   display: inline-block;
   height: 120px;
   width: 120px;
-  background-color: #1A1A1A;
+  background-color: #002900;
 }
 
 .skills-tech--icon span{
@@ -131,7 +139,7 @@ body{
 .skills-highlights{
   display: inline-block;
   padding: 0;
-  width: 60%;
+  width: 70%;
 }
 
 .skills-highlights--list{
@@ -159,14 +167,17 @@ body{
   max-width: 850px;
   margin: 10px auto;
   border: 1px solid black;
-  border-radius: 4px;
-  /* background: #C6F2C6; */
+  border-radius: 8px;
+  background: white;
 }
 
 .project-item-content{
   display: grid;
   grid-template-columns: 250px auto;
-  grid-template-rows: 250px auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    'img description'
+    'links description';
   text-align: left;
 }
 
@@ -174,6 +185,7 @@ body{
   max-width: 230px;
   max-height: 230px;
   margin: 10px;
+  grid-area: img;
 }
 .project-item-content--img img{
   width: 100%;
@@ -183,20 +195,31 @@ body{
 .project-item-content--links{
   display: flex;
   flex-direction: column;
-  /* width: 300px; */
   margin: 10px;
   text-align: center;
+  grid-area: links;
+}
+
+.project-item-content--links a:link,
+.project-item-content--links a:visited,
+.project-item-content--links a:hover,
+.project-item-content--links a:active{
+  color: black;
+}
+
+.project-item-content--links a{
+  margin-bottom: 5px;
 }
 
 .project-item-content--description{
-  grid-column: 2;
-  grid-row: 1 / span 2;
   padding: 10px;
+  grid-area: description;
 }
 
 .project-item-content--description p{
   margin-top: 0;
 }
+
 
 
 /* Contact */
@@ -220,7 +243,7 @@ body{
 }
 
 .contact-list-item{
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   width: 210px;
   display: inline-flex;
   flex-direction: column;
@@ -238,6 +261,11 @@ body{
 .contact-list-item a:hover,
 .contact-list-item a:visited,
 .contact-list-item a:active{
+  color: white;
+}
+
+.footer{
+  background: #1A1A1A;
   color: white;
 }
 
@@ -294,7 +322,7 @@ body{
 
 /*** Reactive designs ***/
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1000px){
   /* Skills Section */
   .skills-content{
     flex-wrap: wrap;
@@ -312,11 +340,53 @@ body{
   }
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 700px){
+
+  /* Content */
+  .content > div{
+    padding: 40px 20px;
+  }
+
   /* Skills Section */
+  .skills-highlights{
+    display: inline-flex;
+    margin: auto;
+    width: auto;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
   .skills-highlights--list {
-    width: 100%;
+    display: inline;
+    width: auto;
   }
 
   /* Projects Section */
+  .project-item-content{
+    text-align: justify;
+    grid-template-columns: 100% 0;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      'img'
+      'description'
+      'links';
+  }
+  .project-item-content > *{
+    margin: auto;
+  }
+  .project-item-content--description-tech{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  /* Nav Bar */
+  .nav{
+    position: static;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .nav--divider{
+    display: none;
+  }
 }
