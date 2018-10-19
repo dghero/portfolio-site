@@ -174,7 +174,7 @@ body{
 .project-item-content{
   display: grid;
   grid-template-columns: 250px auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: 250px auto;
   grid-template-areas: 
     'img description'
     'links description';
@@ -195,6 +195,7 @@ body{
 .project-item-content--links{
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   margin: 10px;
   text-align: center;
   grid-area: links;
@@ -371,7 +372,8 @@ body{
       'links';
   }
   .project-item-content > *{
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .project-item-content--description-tech{
     text-align: center;
@@ -388,5 +390,10 @@ body{
 
   .nav--divider{
     display: none;
+  }
+
+  /* Content */
+  .content > div{
+    padding: 20px 5px;
   }
 }
