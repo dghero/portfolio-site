@@ -44,6 +44,8 @@ body{
   justify-content: center;
   background: #B9CCE5;
   box-shadow: 0 6px 10px 0px rgba(68, 68, 85, .5);
+
+  font-weight: bold;
 }
 
 .nav > *{
