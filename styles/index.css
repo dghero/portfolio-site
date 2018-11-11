@@ -412,6 +412,11 @@ body{
 }
 
 @media only screen and (max-width: 550px){
+  /* Header */
+  .header-banner{
+    height: 350px;
+  }
+
   /* Nav Bar */
   .nav{
     position: static;
