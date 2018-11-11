@@ -13,10 +13,15 @@ body{
   padding: 30px;
   background: #1A1A1A;
   color: white;
+  height: 500px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .header-banner h1{
-  font-size: 2.3em;
+  font-size: 4.3em;
 }
 .header-banner h2{
   font-size: 1.3em;
@@ -27,6 +32,14 @@ body{
   margin: 0;
 }
 
+.header-banner p{
+  margin-top: 40px;
+  font-size: 1.2em;
+}
+
+.cursor{
+  visibility: hidden;
+}
 
 .header-nav > *{
   margin: 10px;
@@ -42,7 +55,8 @@ body{
 
   display: flex;
   justify-content: center;
-  background: #B9CCE5;
+  background: #1A1A1A;
+  color: white;
   box-shadow: 0 6px 10px 0px rgba(68, 68, 85, .5);
 
   font-weight: bold;
@@ -56,7 +70,7 @@ body{
 .nav a:visited,
 .nav a:hover,
 .nav a:active{
-  color: black;
+  color: white;
 }
 
 
